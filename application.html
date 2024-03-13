@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/application.css" />
+    <link rel="shortcut icon" href="Assets/logo.png" type="image/x-icon" />
+    <title>Application</title>
+  </head>
+  <body>
+    <!-- Navigation Bar and Header -->
+    <header>
+      <div class="logo">
+        <img src="Assets/welcomeImg.png" class="logoImg" />
+      </div>
+      <input type="checkbox" id="nav_check" hidden />
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="members.html">Members</a>
+          </li>
+          <li>
+            <a href="courses.html">Courses</a>
+          </li>
+          <li>
+            <a href="application.html">Apply</a>
+          </li>
+        </ul>
+      </nav>
+      <label for="nav_check" class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+    </header>
+    <!-- Content -->
+    <main>
+      <div class="wrapper">
+        <div class="title">Registration</div>
+        <form action="https://formspree.io/f/xwkgqvek" method="post">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Forename</span>
+              <input type="text" placeholder="Enter your forename" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Surname</span>
+              <input type="text" placeholder="Enter your surname" required />
+            </div>
+            <div class="input-box">
+              <span class="details">E-Mail</span>
+              <input type="email" placeholder="Enter your email" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Phone Number</span>
+              <input type="number" placeholder="Enter your number" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Address</span>
+              <input type="text" placeholder="Enter your address" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Postcode</span>
+              <input type="text" placeholder="Enter your postcode" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Message</span>
+              <textarea
+                name="message"
+                placeholder="Enter your message"
+              ></textarea>
+            </div>
+          </div>
+          <div class="gender-details">
+            <input type="radio" name="gender" id="dot-1" />
+            <input type="radio" name="gender" id="dot-2" />
+            <span class="gender-title">Gender</span>
+            <div class="category">
+              <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">Male</span>
+              </label>
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">Female</span>
+              </label>
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" value="Register" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__addr">
+        <h1 class="footer__logo">NCSC</h1>
+        <h2 class="contact">Contact</h2>
+        <address>
+          NOVA South, Victoria, London 0300 020 0964
+          <br />
+          <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+        </address>
+      </div>
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Media</h2>
+          <ul class="nav__ul">
+            <li>
+              <a href="https://www.instagram.com/cyberhq/">Instagram</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/ncsc">X</a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/national-cyber-security-centre/"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <h2 class="nav__title">Legal</h2>
+          <ul class="nav__ul">
+            <li>
+              <a
+                href="https://www.ncsc.gov.uk/section/about-this-website/privacy-statement"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.ncsc.gov.uk/section/about-this-website/terms-and-conditions"
+                >Terms of Use</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="legal">
+        <p class="legalText">&copy; 2024 Assignment. Only for education use</p>
+      </div>
+    </footer>
+  </body>
+  <script src="main.js"></script>
+</html>
