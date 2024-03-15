@@ -157,6 +157,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 50px;
+  z-index: 1000;
 }
 
 header .logo {
@@ -308,10 +309,12 @@ header nav ul li a.active {
   clip-path: circle(50% at 50% 50%);
   width: 130px;
   height: 130px;
+  z-index: -1;
 }
 
 .team-member-image {
   max-width: 100%;
+  z-index: -1;
 }
 
 @media (max-width: 500px) {
